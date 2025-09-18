@@ -1,4 +1,4 @@
-# BestSolution2: Hybrid RDKit/Mordred + XGB/Tree Models + GNN Ensemble (NeurIPS – Open Polymer Prediction 2025)
+# BestSolution2: Hybrid RDKit/Mordred + XGB/Tree Models + GNN Ensemble
 
 * A **two-stage pipeline** that (1) cleans/extends training data, builds **descriptor-heavy tabular features** from SMILES, and predicts each target with **label‑tuned gradient boosting forests**; then (2) **ensembles** those tabular predictions with a **graph neural network (GNN)** inference head. The final submission is the **mean** of all produced prediction frames.
 * **Result:** **Final Leaderboard Result: 125 / 2,240 teams (Top 6%, Bronze Medal)**
