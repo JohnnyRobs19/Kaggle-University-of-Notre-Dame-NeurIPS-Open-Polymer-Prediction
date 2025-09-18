@@ -18,20 +18,6 @@ These properties were derived from **multiple molecular dynamics simulations** a
 
 ---
 
-## Evaluation Metric
-The competition used a **Weighted Mean Absolute Error (wMAE)**:
-
-$$
-\text{wMAE} = \frac{1}{|D|} \sum_{i \in D} \sum_{t \in T} w_t \cdot \frac{|y_{i,t} - \hat{y}_{i,t}|}{\text{range}(t)}
-$$
-
-Where:
-- **Scale normalization:** Divides error by property range to prevent large-scale properties from dominating.
-- **Inverse square-root weighting:** Emphasizes rare properties by up-weighting them.
-- **Weight normalization:** Ensures equal total contribution across all properties.
-
----
-
 ## Submission Format
 The final submission was a CSV with predictions for each property:
 
